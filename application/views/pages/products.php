@@ -10,8 +10,8 @@
 						<img class="img-product" src="<?= $products['img'] ?>" alt="<?= $products['name'] ?>">
 					</div>
 					<div class="block-button">
-						<button type="button" class="btn btn-warning">See more</button>
-						<button type="button" class="btn btn-warning">Add to cart</button>
+						<a href="<?php echo site_url('/product'.$products['id_product']); ?>" class="btn btn-secondary">See more</a>
+						<button type="button" class="btn btn-secondary">Add to cart</button>
 					</div>
 				</div>
 			</div>

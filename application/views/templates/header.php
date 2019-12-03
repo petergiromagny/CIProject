@@ -19,8 +19,8 @@
 						<li><a class="nav-link" href="<?php echo base_url();?>contact">Contact us</a></li>
 					</ul>
 				</div>
-				<div class="col-md nav-pages">
-					<a class="nav-link" href="<?php echo base_url();?>"><h2>FEU</h2></a>
+				<div class="col-md">
+					<a class="nav-link logo-header" href="<?php echo base_url();?>">FEU</a>
 				</div>
 				<div class="col-md nav-pages">
 					<ul class="login-list">

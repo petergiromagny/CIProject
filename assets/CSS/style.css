@@ -2,12 +2,12 @@
 	font-family: kanit,sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	color: #eeeeee;
+	color: #D2D6D9;
 
 }
 
 body, html{
-	background: #919494;
+	background: #74888C;
 	height: 100%;
 }
 
@@ -20,7 +20,7 @@ body, html{
 	max-width: 1500px;
 	height: 75px;
 	margin: 0 auto 80px auto;
-	border-bottom: 4px solid #F29F05;
+	border-bottom: 4px solid #2C3A40;
 }
 
 .navbar-list{
@@ -45,12 +45,12 @@ body, html{
 	text-align: center;
 	font-weight: 400;
 	font-style: normal;
-	color: #ffffff;
+	color: #D2D6D9;
 	cursor: default;
 	text-decoration: none;
 }
 .nav-pages a:hover{
-	color: #F29F05;
+	color: #2C3A40;
 	text-decoration: none;
 	cursor: pointer;
 }
@@ -60,12 +60,27 @@ body, html{
 }
 
 .nav-pages i:hover{
-	color: #F29F05;
+	color: #2C3A40;
 	cursor: pointer;
 }
 
 .nav-link{
 	padding: 0 1rem;
+}
+
+.logo-header{
+	font-family: kanit,sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 400;
+	font-style: normal;
+	color: #D2D6D9;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.logo-header:hover{
+	color: #2C3A40;
 }
 
 .navbar-button{
@@ -79,7 +94,7 @@ body, html{
 }
 
 a.login-button:hover{
-	color: #F29F05
+	color: #2C3A40
 }
 
 
@@ -97,7 +112,7 @@ a.login-button:hover{
 }
 
 .title h1{
-	color: white;
+	color: #D2D6D9;
 	font-size: 70px;
 	font-weight: 700;
 	text-align: left;
@@ -106,7 +121,7 @@ a.login-button:hover{
 #square{
 	width: 500px;
 	height: 610px;
-	background: #F29F05;
+	background: #D2D6D9;
 }
 
 .square-place{
@@ -144,7 +159,7 @@ a.login-button:hover{
 
 .cat-name{
 	font-size: 45px;
-	color: #2603A5;
+	color: #74888C;
 	font-weight: 600;
 	text-decoration: none;
 	transition: color .5s;
@@ -155,7 +170,7 @@ a.login-button:hover{
 }
 
 .categories-block:hover .cat-name{
-	color: #F29F05;
+	color: #2C3A40;
 }
 
 #container-sign{
@@ -249,11 +264,6 @@ form{
 	margin: 0 15px;
 }
 
-.product-button{
-	border: 1px solid #F29F05;
-	background-color: #F29F05;
-}
-
 .img-product{
 	width: 100%;
 	height: 400px;
@@ -264,7 +274,7 @@ form{
 footer{
 	max-width: 1500px;
 	margin: 80px auto 0 auto;
-	color: white;
+	color: #D2D6D9;
 
 	width: 100%;
 }
@@ -277,7 +287,7 @@ footer{
 	display: flex;
 	max-width: 230px;
 	margin: 10px auto;
-	text-align: left;
+	justify-content: center;
 }
 
 .contact-info i{
@@ -289,7 +299,7 @@ footer{
 }
 
 #entertainement{
-	border-top: 4px solid #F29F05;
+	border-top: 4px solid #2C3A40;
 }
 
 #entertainement p{
@@ -303,12 +313,12 @@ footer{
 }
 
 .link-footer{
-	color: #eeeeee;
+	color: #D2D6D9;
 }
 
 .link-footer:hover{
 	text-decoration: none;
-	color: #F29F05;
+	color: #2C3A40;
 	font-weight: 500;
 }
 

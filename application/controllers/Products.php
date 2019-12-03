@@ -22,9 +22,21 @@ class Products extends CI_Controller
 		$this->load->view('templates/footer');
 	}
 
-	public function view($name = NULL)
+	public function viewProduct($idProduct = NULL)
 	{
-		$data['news_product'] = $this->Product->get_products($name);
+		$data['products'] = $this->product->get_products($idProduct);
+
+		if (empty($data['product']))
+		{
+			show_404();
+		}
+
+		$data['title'] = $data['products']['title'];
+
+		$this->load->view('templates/header');
+		$this->load->view('pages/viewProduct', $data);
+		$this->load->view('templates/footer');
+
 	}
 
 }
