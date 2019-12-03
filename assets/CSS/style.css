@@ -227,24 +227,36 @@ form{
 }
 
 .block-product{
-	display: inline-flex;
-	flex-wrap: wrap;
+	height: 600px;
 }
 
-.box-product{
-	width: 500px;
-	border: solid 2px #fff;
-	margin-bottom: 20px;
-}
-
-.box-product h3{
-	margin: 20px;
+.block-title{
+	padding-top: 5vh;
 	text-align: center;
 }
 
+.block-img{
+	margin: 20px 15px;
+}
+
+.block-button{
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.block-button button{
+	margin: 0 15px;
+}
+
+.product-button{
+	border: 1px solid #F29F05;
+	background-color: #F29F05;
+}
+
 .img-product{
-	width: 300px;
-	margin: 10px 30px;
+	width: 100%;
+	height: 400px;
 }
 
 /****************** FOOTER ******************/
