@@ -7,9 +7,16 @@
 }
 
 body, html{
+	font-family: kanit,sans-serif;
 	background: #74888C;
 	height: 100%;
 }
+
+body{
+	margin-bottom: 60px;
+}
+
+
 
 
 /****************** HEAD ******************/
@@ -19,7 +26,7 @@ body, html{
 	padding: 10px;
 	max-width: 1500px;
 	height: 75px;
-	margin: 0 auto 80px auto;
+	margin: 0 auto 50px auto;
 	border-bottom: 4px solid #2C3A40;
 }
 
@@ -267,6 +274,31 @@ form{
 .img-product{
 	width: 100%;
 	height: 400px;
+}
+
+.btn-back{
+	text-decoration: none;
+	font-weight: 500;
+	color: #d2d6d9;
+}
+
+.btn-back:hover{
+	text-decoration: none;
+	color: #4e555b;
+}
+
+.one-product-img{
+	width: 400px;
+	margin: 30px auto auto auto;
+}
+
+.one-img{
+	width: 100%;
+}
+
+.price{
+	font-size: 30px;
+	font-weight: 500;
 }
 
 /****************** FOOTER ******************/

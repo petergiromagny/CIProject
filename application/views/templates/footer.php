@@ -1,18 +1,17 @@
 		</div>
-		<footer>
+		<footer class="footer">
 			<div class="row">
 				<div class="col-md footer-items left-footer">
 					<h3>PRODUCTS</h3>
 					<ul>
 						<li><a href="#"  class="link-footer">Sweat</a></li>
-						<li><a href="#"  class="link-footer">Tees</a></li>
+						<li><a href="<?php echo base_url();?>products"  class="link-footer">Tees</a></li>
 						<li><a href="#"  class="link-footer">Pants</a></li>
-						<li><a href="#"  class="link-footer">Shoes</a></li>
 					</ul>
 				</div>
 				<div class="col-md footer-items mid-footer">
 					<h3>ABOUT US</h3>
-					<p>Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent.</p>
+					<p>Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim.</p>
 				</div>
 				<div class="col-md footer-items right-footer">
 					<h3>CONTACT US</h3>

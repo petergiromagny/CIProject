@@ -3,6 +3,7 @@
 
 class Products extends CI_Controller
 {
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -24,19 +25,27 @@ class Products extends CI_Controller
 
 	public function viewProduct($idProduct = NULL)
 	{
-		$data['products'] = $this->product->get_products($idProduct);
+		$data['oneproduct'] = $this->product->get_products($idProduct);
 
-		if (empty($data['product']))
+		if (empty($data['oneproduct']))
 		{
 			show_404();
 		}
 
-		$data['title'] = $data['products']['title'];
+		$data['name'] = $data['oneproduct']['name'];
 
 		$this->load->view('templates/header');
 		$this->load->view('pages/viewProduct', $data);
 		$this->load->view('templates/footer');
 
+	}
+
+	public function clear_url($url)
+	{
+		$url = strtolower($url);
+		$url = strstr($url, "àäåâôöîïûüéè", "aaaaooiiuuee");
+		$url = str_replace(' ', '-', $url);
+		return $url;
 	}
 
 }
