@@ -24,8 +24,8 @@
 				</div>
 				<div class="col-md nav-pages">
 					<ul class="login-list">
-						<li><a href="" class="login-button nav-link">Sign up</a></li>
-						<li><a href="" class="login-button nav-link">Login</a></li>
+						<li><a href="<?php echo base_url();?>register" class="login-button nav-link">Sign up</a></li>
+						<li><a href="<?php echo base_url();?>login" class="login-button nav-link">Login</a></li>
 					</ul>
 				</div>
 			</div>
