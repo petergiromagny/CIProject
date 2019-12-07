@@ -29,7 +29,8 @@ class Products extends CI_Controller
 
 		if (empty($data['oneproduct']))
 		{
-			show_404();
+			//show_404();
+			echo "ERROR";
 		}
 
 		$data['name'] = $data['oneproduct']['name'];

@@ -37,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aut doloremque 
 /***************************User Table*********************************/
 
 -- auto-generated definition
-create table user
+create table if not exists user
 (
     ID_user   int auto_increment
         primary key,

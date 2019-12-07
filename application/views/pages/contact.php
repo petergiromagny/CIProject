@@ -3,8 +3,12 @@
 		<div class="col-md-3">
 			<div class="contact-left">
 				<h1 class="title mb-4">Contact</h1>
-				<div class=""><p>E-mail : <a href="mailto:peter.giromagny@me.com" class="link-contact">peter.giromagny@me.com</a></p></div>
-				<div class=""><p>Phone : <a href="tel:+33682056052" class="link-contact">06.82.05.60.52</a></p></div>
+				<div class="info-contact">
+					<h5>E-mail</h5>
+					<a href="mailto:peter.giromagny@me.com" class="link-contact">peter.giromagny@me.com</a></div>
+				<div class="info-contact">
+					<h5>Phone</h5>
+					<a href="tel:+33682056052" class="link-contact">06.82.05.60.52</a></div>
 			</div>
 		</div>
 		<div class="col-md-9">

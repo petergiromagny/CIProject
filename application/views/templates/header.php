@@ -1,3 +1,6 @@
+<?php
+
+?>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -23,10 +26,17 @@
 					<a class="nav-link logo-header" href="<?php echo base_url();?>">FEU</a>
 				</div>
 				<div class="col-md nav-pages">
+					<?php if (isset($_SESSION['success'])){ ?>
+					<div>
+						<p>Hello <?= $_SESSION['username'];?></p>
+						<a href="<?= base_url(); ?>logout" class="btn btn-secondary">Logout</a>
+					</div>
+					<?php } else {?>
 					<ul class="login-list">
-						<li><a href="<?php echo base_url();?>register" class="login-button nav-link">Sign up</a></li>
-						<li><a href="<?php echo base_url();?>login" class="login-button nav-link">Login</a></li>
+						<li><a href="<?= base_url();?>register" class="login-button nav-link">Sign up</a></li>
+						<li><a href="<?= base_url();?>login" class="login-button nav-link">Login</a></li>
 					</ul>
+					<?php }?>
 				</div>
 			</div>
 		</div>
