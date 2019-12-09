@@ -1,5 +1,6 @@
 <?php
-
+echo session_status();
+session_destroy();
 ?>
 <html>
 	<head>

@@ -31,7 +31,7 @@
 			</div>
 			<div class="col">
 				<label>
-					<input type="password" class="form-control" placeholder="Confirm password" name="password">
+					<input type="password" class="form-control" placeholder="Confirm password" name="password2">
 				</label>
 			</div>
 		</div>
