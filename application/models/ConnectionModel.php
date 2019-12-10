@@ -8,18 +8,14 @@ class ConnectionModel extends CI_Model
 		parent::__construct();
 	}
 
-	public function can_login($mail, $password)
+	function check_user($username, $password)
 	{
-		$this->db->where('mail', $mail);
-		$this->db->where('password', $password);
-		$query = $this->db->get('user');
+		$this->db->select('*');
+		$this->db->from('user');
+		$this->db->where('username', $username);
+		$this->db->where('password', sha1($password));
+		$query = $this->db->get();
 
-		if ($query->num_rows() > 0)
-		{
-			return TRUE;
-		} else {
-			return FALSE;
-		}
+		return $query;
 	}
-
 }

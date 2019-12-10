@@ -1,6 +1,5 @@
 <?php
-echo session_status();
-session_destroy();
+
 ?>
 <html>
 	<head>
@@ -27,11 +26,11 @@ session_destroy();
 					<a class="nav-link logo-header" href="<?php echo base_url();?>">FEU</a>
 				</div>
 				<div class="col-md nav-pages">
-					<?php if (isset($_SESSION['success'])){ ?>
-					<div>
-						<p>Hello <?= $_SESSION['username'];?></p>
-						<a href="<?= base_url(); ?>logout" class="btn btn-secondary">Logout</a>
-					</div>
+					<?php if ($this->session->userdata('logged_in') == TRUE){ ?>
+					<ul class="login-list">
+						<li><a href="<?= base_url();?>profile" class="login-button nav-link"><?= ucfirst($this->session->userdata('username')); ?></a></li>
+						<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
+					</ul>
 					<?php } else {?>
 					<ul class="login-list">
 						<li><a href="<?= base_url();?>register" class="login-button nav-link">Sign up</a></li>

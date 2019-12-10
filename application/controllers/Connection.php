@@ -1,69 +1,56 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Connection extends CI_Controller
 {
-	//TODO la session ne tiens pas plusieurs changement de page
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('ConnectionModel');
+	}
+
+	public function index()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('authentification/login');
+	}
+
 	public function logout()
 	{
-		unset($_SESSION);
-		redirect('home', 'refresh');
+		$this->session->sess_destroy();
+		redirect('home');
 	}
 
 	public function login()
 	{
-		$this->load->library('form_validation');
-		$this->form_validation->set_rules('mail', 'mail', 'required');
-		$this->form_validation->set_rules('password', 'password', 'required');
+		$username = $this->input->post('username', TRUE);
+		$password = $this->input->post('password', TRUE);
+		$result = $this->ConnectionModel->check_user($username, $password);
 
-		$mail = $this->input->post('mail');
-		$password = $this->input->post('password');
-
-		$this->load->model('ConnectionModel');
-
-		if ($this->ConnectionModel->can_login($mail, $password))
+		if($result->num_rows() > 0)
 		{
-			
+			$data = $result->row_array();
+			$username = $data['username'];
+			$mail = $data['mail'];
+			$firstname = $data['firstname'];
+			$lastname = $data['lastname'];
+			$userdata = array(
+				'username' => $username,
+				'mail' => $mail,
+				'firstname' => $firstname,
+				'lastname' => $lastname,
+				'logged_in' => TRUE
+			);
+
+			$this->session->set_userdata($userdata);
+
+			redirect('profile');
+		}
+		else
+		{
+			echo '<script>alert("access denied");history.go(-1);</script>';
 		}
 
-//		if (isset($_POST['mail']) && isset($_POST['password']))
-//		{
-//			if ($this->form_validation->run())
-//			{
-//				$mail = htmlspecialchars($_POST['mail']);
-//				$password = sha1($_POST['password']);
-//
-//				$this->db->select('*');
-//				$this->db->from('user');
-//				$this->db->where(array(
-//						'mail'=>$mail,
-//						'password'=>$password)
-//				);
-//				$query = $this->db->get();
-//				$user = $query->row();
-//
-//				if ($user->mail)
-//				{
-//					$this->load->library('session');
-//					//temporary message
-//					$this->session->set_flashdata('success', 'You are logged in');
-//					//set session variables
-//					$_SESSION['user_logged'] = TRUE;
-//					$_SESSION['username'] = $user->username;
-//					//redirect to profile page
-//
-//					//redirect("user/profile","refresh");
-//
-//
-//				} else {
-//					$this->session->set_flashdata('error', 'No such account exists in database');
-//					//redirect("login","refresh");
-//
-//				}
-//			}
-//		}
-
-		$this->load->view('templates/header');
 		$this->load->view('authentification/login');
 	}
 
@@ -108,7 +95,7 @@ class Connection extends CI_Controller
 				}
 				else
 				{
-					echo "Les mots de passes ne correspondent pas";
+					$this->session->set_flashdata('error', 'Les mots de passes ne correspondent pas');
 				}
 			}
 		}
@@ -117,4 +104,9 @@ class Connection extends CI_Controller
 		$this->load->view('authentification/register');
 	}
 
+	public function user_profile()
+	{
+		$this->load->view('templates/header');
+		$this->load->view('pages/profile');
+	}
 }
