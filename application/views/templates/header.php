@@ -3,14 +3,16 @@
 ?>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="unicode">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet"
 			  href="https://use.typekit.net/gar6jrk.css">
 		<link rel = "stylesheet" type = "text/css"
 			  href = "<?php echo base_url(); ?>assets/css/style.css">
 		<link rel="stylesheet"
-			  href="<?php echo base_url(); ?>assets/Bootstrap/css/bootstrap.css">
+			  href="<?php echo base_url(); ?>assets/css/bootstrap.css">
+		<link rel="stylesheet"
+			  href="<?php echo base_url(); ?>assets/FontAwesome/css/all.css">
 
 		<title>CodeIgniter Tutorial</title>
 		<div id="container-navbar">
@@ -30,6 +32,7 @@
 					<ul class="login-list">
 						<li><a href="<?= base_url();?>profile" class="login-button nav-link"><?= ucfirst($this->session->userdata('username')); ?></a></li>
 						<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
+						<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
 					</ul>
 					<?php } else {?>
 					<ul class="login-list">
