@@ -35,34 +35,34 @@
 						<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
 					</ul>
 					<?php } else {?>
-<!--					<ul class="login-list">-->
-<!--						<li><a href="--><?//= base_url();?><!--register" class="login-button nav-link">Sign up</a></li>-->
-<!--						<li><a href="--><?//= base_url();?><!--login" class="login-button nav-link">Login</a></li>-->
-<!--					</ul>-->
 					<ul class="login-list">
 						<li><a href="<?= base_url();?>register" class="login-button nav-link">Sign up</a></li>
-						<li><a onclick="loginShow()" class="login-button nav-link">Login</a></li>
+						<li><a href="<?= base_url();?>login" class="login-button nav-link">Login</a></li>
 					</ul>
 
-					<!--LOGIN FORM-->
-						<form id="login" class="col s12 loginbox" action="" method="post">
-							<div class="row">
-								<div class="input-field col s12">
-									<input id="username" type="text" required>
-									<label for="username">Username</label>
-								</div>
-								<div class="input-field col s12">
-									<input id="password" type="password" required>
-									<label for="password">Password</label>
-								</div>
-								<div class="col s12">
-									<a class="waves-effect waves-light btn" style="width:100%;background-color:#4267B1;">Log in</a>
-									<p class="center">Not registered? <a href="#">Create an account</a></p>
-								</div>
-							</div>
-						</form>
-
-					<!--https://codepen.io/razaqultegar/pen/MqYmQv-->
+						<!--TODO https://codepen.io/razaqultegar/pen/MqYmQv-->
+<!--					<ul class="login-list">-->
+<!--						<li><a href="--><?//= base_url();?><!--register" class="login-button nav-link">Sign up</a></li>-->
+<!--						<li><a onclick="loginShow()" class="login-button nav-link">Login</a></li>-->
+<!--					</ul>-->
+<!---->
+<!--					-->
+<!--						<form id="login" class="col s12 loginbox" style="display: none;" action="--><?//= site_url('Connection/login'); ?><!--" method="post">-->
+<!--							<div class="row">-->
+<!--								<div class="input-field col s12">-->
+<!--									<input id="username" type="text" name="username" required>-->
+<!--									<label for="username">Username</label>-->
+<!--								</div>-->
+<!--								<div class="input-field col s12">-->
+<!--									<input id="password" type="password" name="password" required>-->
+<!--									<label for="password">Password</label>-->
+<!--								</div>-->
+<!--								<div class="col s12">-->
+<!--									<button type="submit" name="login" class="btn btn-primary btn-signin mt-4">Sign in</button>-->
+<!--									<p class="center">Not registered? <a href="#">Create an account</a></p>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</form>-->
 					<?php }?>
 				</div>
 			</div>

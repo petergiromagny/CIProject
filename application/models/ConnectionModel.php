@@ -11,7 +11,7 @@ class ConnectionModel extends CI_Model
 	function check_user($username, $password)
 	{
 		$this->db->select('*');
-		$this->db->from('user');
+		$this->db->from('customer');
 		$this->db->where('username', $username);
 		$this->db->where('password', sha1($password));
 		$query = $this->db->get();
