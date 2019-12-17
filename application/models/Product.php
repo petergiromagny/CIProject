@@ -7,7 +7,6 @@ class Product extends CI_Model
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->database();
 	}
 
 	public function get_products($id_product = FALSE)

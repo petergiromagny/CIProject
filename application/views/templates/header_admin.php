@@ -37,15 +37,19 @@
 					<a href="#">Contact</a>
 				</li>
 			</ul>
+			<ul class="list-unstyled m-3">
+				<li><a href="<?= base_url();?>home" class="btn btn-secondary mb-3">Back to website</a></li>
+				<li><a href="<?= site_url('Connection/logout'); ?>" class="btn btn-secondary">Logout</a></li>
+			</ul>
 		</nav>
 		<nav>
-			<?php if ($this->session->userdata('logged_in') == TRUE){ ?>
+			<?php //if ($this->session->userdata('logged_in') == TRUE){ ?>
 				<ul class="login-list">
 					<li><a href="<?= base_url();?>profile" class="login-button nav-link"><?= ucfirst($this->session->userdata('username')); ?></a></li>
 					<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
 					<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
 				</ul>
-			<?php }?>
+			<?php //}?>
 		</nav>
 	</div>
 

@@ -1,26 +1,14 @@
 <div id="container-cat">
+	<?php if (isset($category)) {
+	foreach ($category as $categories) :?>
 	<div class="categories-block">
-		<a href="<?php echo base_url();?>products">
-			<img src="<?php echo base_url();?>assets/img/collection1.png" class="cat-banner" alt="tees">
+		<a href="<?= site_url('categories/'. $categories['id_category'])?>">
+			<img src="<?= $categories['img']?>" class="cat-banner" alt="tees">
 			<div class="middle">
-				<div class="cat-name">Tees</div>
+				<div class="cat-name"><?= $categories['name']?></div>
 			</div>
 		</a>
 	</div>
-	<div class="categories-block">
-		<a href="">
-			<img src="<?php echo base_url();?>assets/img/collection2.png" class="cat-banner" alt="pants">
-			<div class="middle">
-				<div class="cat-name">Pants</div>
-			</div>
-		</a>
-	</div>
-	<div class="categories-block">
-		<a href="">
-			<img src="<?php echo base_url();?>assets/img/collection3.png" class="cat-banner" alt="shoes">
-			<div class="middle">
-				<div class="cat-name">Shoes</div>
-			</div>
-		</a>
-	</div>
+	<?php endforeach;
+	}?>
 </div>

@@ -34,21 +34,30 @@ class Connection extends CI_Controller
 			$mail = $data['mail'];
 			$firstname = $data['firstname'];
 			$lastname = $data['lastname'];
+			$level = $data['level'];
 			$userdata = array(
 				'username' => $username,
 				'mail' => $mail,
 				'firstname' => $firstname,
 				'lastname' => $lastname,
+				'level' => $level,
 				'logged_in' => TRUE
 			);
 
 			$this->session->set_userdata($userdata);
 
-			redirect('profile');
+			if($this->session->userdata('level') == '2')
+			{
+				redirect('admin');
+			}
+			else
+			{
+				redirect('profile');
+			}
 		}
 		else
 		{
-			echo '<script>alert("access denied");history.go(-1);</script>';
+			echo '<script>alert("Error");history.go(-1);</script>';
 		}
 
 		$this->load->view('authentification/login');
