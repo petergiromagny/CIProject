@@ -20,10 +20,23 @@ class CategoryModel extends CI_Model
 		return $query->row_array();
 	}
 
+	public function get_products($id_product = FALSE)
+	{
+		if ($id_product === FALSE)
+		{
+			$query = $this->db->get('product');
+			return $query->result_array();
+		}
+
+		$query = $this->db->get_where('product', array('id_product' => $id_product));
+		return $query->row_array();
+	}
+
 	public function getProdByCat($idCat)
 	{
-		$query = $this->db->get_where('product', array('category' == $idCat));
-		return $query->row_array();
+		$this->db->where('category', $idCat);
+		$query = $this->db->get('product');
+		return $query->result_array();
 	}
 
 }

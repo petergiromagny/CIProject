@@ -1,6 +1,6 @@
 <?php if (isset($oneproduct)) { ?>
 <div>
-	<a class="btn-back" href="<?php echo base_url();?>products"> < Back to all products</a>
+	<a class="btn-back" href="javascript:history.go(-1)"> < Back to all products</a>
 </div>
 <div class="row justify-content-around">
 	<div class="col-md-5">

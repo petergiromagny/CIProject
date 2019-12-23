@@ -406,6 +406,40 @@ form{
 	font-weight: 500;
 }
 
+.name-page{
+	color: #434d50;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.block-category{
+	background-color: #6c757d;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	border-radius: 2px;
+	padding: 20px;
+	margin: 10px 0;
+	border-style: hidden;
+}
+
+.block-category th{
+	color: #d2d6d9;
+}
+
+.td-middle td{
+	vertical-align: middle !important;
+}
+
+
+.block-cat-img img{
+	width: 300px;
+}
+
+.block-prod-img img{
+	width: 100px;
+}
+
 /****************** FOOTER ******************/
 
 footer{

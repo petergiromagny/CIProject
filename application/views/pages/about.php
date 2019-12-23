@@ -7,7 +7,7 @@
 			<p>Et Epigonus quidem amictu tenus philosophus, ut apparuit, prece frustra temptata, sulcatis lateribus mortisque metu admoto turpi confessione cogitatorum socium, quae nulla erant, fuisse firmavit cum nec vidisset quicquam nec audisset penitus expers forensium rerum; Eusebius vero obiecta fidentius negans, suspensus in eodem gradu constantiae stetit latrocinium illud esse, non iudicium clamans.</p>
 		</div>
 		<div class="col-md-3">
-			<img src="../isset/img/sweat.png" style="width: 300px; height: 300px" alt="sweat">
+			<img src="<?= base_url();?>assets/img/sweat.png" style="width: 300px; height: 300px" alt="sweat">
 		</div>
 	</div>
 	<div class="row">
