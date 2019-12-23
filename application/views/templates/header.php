@@ -34,20 +34,20 @@
 					<?php if ($this->session->userdata('logged_in') == TRUE){ ?>
 
 						<?php if($this->session->userdata('level') == '2'){ ?>
-							<ul class="login-list">
+							<ul class="login-list justify-content-end">
 								<li><a href="<?= site_url('admin');?>" class="login-button nav-link">Admin page</a></li>
 								<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
 								<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
 							</ul>
 						<?php }else{?>
-							<ul class="login-list">
+							<ul class="login-list justify-content-end">
 								<li><a href="<?= base_url();?>profile" class="login-button nav-link"><?= ucfirst($this->session->userdata('username')); ?></a></li>
 								<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
 								<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
 							</ul>
 						<?php }
 					} else { ?>
-						<ul class="login-list">
+						<ul class="login-list justify-content-end">
 							<li><a href="<?= base_url();?>register" class="login-button nav-link">Sign up</a></li>
 							<li><a href="<?= base_url();?>login" class="login-button nav-link">Login</a></li>
 						</ul>

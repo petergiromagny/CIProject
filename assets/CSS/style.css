@@ -16,9 +16,6 @@ body{
 	margin-bottom: 60px;
 }
 
-
-
-
 /****************** HEAD ******************/
 
 
@@ -40,6 +37,7 @@ body{
 .login-list{
 	display: flex;
 	justify-content: right;
+	-webkit-justify-content: center;
 	list-style: none;
 	padding-left: 0;
 	margin: 10px auto;
@@ -190,27 +188,7 @@ a.login-button:hover{
 	color: #74888C;
 }
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
 
-@media (max-width: 768px) {
-	#sidebar {
-		margin-left: -250px;
-	}
-	#sidebar.active {
-		margin-left: 0;
-	}
-	#content {
-		width: 100%;
-	}
-	#content.active {
-		width: calc(100% - 250px);
-	}
-	#sidebarCollapse span {
-		display: none;
-	}
-}
 
 /****************** BODY ******************/
 
@@ -493,6 +471,10 @@ footer{
 	font-weight: 500;
 }
 
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
 @media screen and (min-width: 1280px) {
 
 	#container-navbar{
@@ -515,4 +497,32 @@ footer{
 		max-width: 1200px;
 	}
 
+}
+
+@media (max-width: 1300px) {
+	#container-navbar{
+		max-width: 900px;
+	}
+
+	#container-body{
+		max-width: 900px;
+	}
+}
+
+@media (max-width: 768px) {
+	#sidebar {
+		margin-left: -250px;
+	}
+	#sidebar.active {
+		margin-left: 0;
+	}
+	#content {
+		width: 100%;
+	}
+	#content.active {
+		width: calc(100% - 250px);
+	}
+	#sidebarCollapse span {
+		display: none;
+	}
 }
