@@ -35,7 +35,7 @@
 
 						<?php if($this->session->userdata('level') == '2'){ ?>
 							<ul class="login-list">
-								<li><a href="<?= site_url('Admin/index');?>" class="login-button nav-link">Admin page</a></li>
+								<li><a href="<?= site_url('admin');?>" class="login-button nav-link">Admin page</a></li>
 								<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
 								<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
 							</ul>

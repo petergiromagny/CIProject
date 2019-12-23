@@ -16,25 +16,30 @@
 
 
 	<title>Feu Admin</title>
+	<style>
+		*{
+			color: #2C3A40;
+		}
+	</style>
 	<div class="wrapper">
 		<!-- Sidebar -->
 		<nav id="sidebar">
 			<div class="sidebar-header">
-				<h3>Feu Official Admin</h3>
+				<h3 style="color: #D2D6D9;">Feu Official Admin</h3>
 			</div>
 
 			<ul class="list-unstyled components">
 				<li>
-					<a href="#">Category</a>
+					<a href="<?= site_url('admin/Category'); ?>">Category</a>
 				</li>
 				<li>
-					<a href="#">Products</a>
+					<a href="<?= site_url('admin/Product'); ?>">Products</a>
 				</li>
 				<li>
-					<a href="#">Portfolio</a>
+					<a href="#">Orders</a>
 				</li>
 				<li>
-					<a href="#">Contact</a>
+					<a href="#">Admin access</a>
 				</li>
 			</ul>
 			<ul class="list-unstyled m-3">
