@@ -22,8 +22,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | If you need to allow multiple domains, remember that this file is still
 | a PHP script and you can easily do that on your own.
 |
+|Localhost MacOS : http://localhost:8888/CIProject/
 */
-$config['base_url'] = 'http://localhost:8888/CIProject/';
+$config['base_url'] = 'http://localhost/CIProject';
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +325,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'feuofficialstoreonline';
 
 /*
 |--------------------------------------------------------------------------

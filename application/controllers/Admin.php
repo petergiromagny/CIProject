@@ -28,6 +28,8 @@ class Admin extends CI_Controller
 
 	public function Category()
 	{
+		//TODO Bouton DELETE et EDIT a faire
+
 		if($this->session->userdata('level') == '2')
 		{
 			$data['category'] = $this->AdminModel->getCategories();
@@ -44,6 +46,8 @@ class Admin extends CI_Controller
 
 	public function Product()
 	{
+		//TODO Bouton DELETE et EDIT a faire
+
 		if($this->session->userdata('level') == '2')
 		{
 			$data['product'] = $this->AdminModel->getProducts();
@@ -57,4 +61,16 @@ class Admin extends CI_Controller
 			redirect('home');
 		}
 	}
+
+	public function order()
+	{
+		//TODO lister les commandes passée
+	}
+
+	public function adminAccess()
+	{
+		//TODO accés des admin, possibilité d'n ajouter ou d'en retirer
+	}
+
+
 }

@@ -4,9 +4,11 @@
 				<div class="col-md footer-items left-footer">
 					<h3>PRODUCTS</h3>
 					<ul>
-						<li><a href="#"  class="link-footer">Sweat</a></li>
-						<li><a href="<?php echo base_url();?>products"  class="link-footer">Tees</a></li>
-						<li><a href="#"  class="link-footer">Pants</a></li>
+						<?php if (isset($category)) {
+						foreach ($category as $categories) :?>
+						<li><a href="<?= site_url('categories/'. $categories['id_category'].'-'.$categories['name'])?>"  class="link-footer"><?= ucfirst($categories['name']);?></a></li>
+						<?php endforeach;
+						}?>
 					</ul>
 				</div>
 				<div class="col-md footer-items mid-footer">

@@ -1,4 +1,3 @@
-
 	<div class="row">
 		<div class="col-lg square-place">
 			<div id="square"><img class="img-home" src="<?php echo base_url(); ?>assets/img/pants.png" alt="new_pants"></div>
@@ -7,8 +6,7 @@
 			<h1>New Season</h1>
 		</div>
 	</div>
-</div>
-<div id="container-body">
+	<div id="container-body">
 	<div class="row">
 		<div class="col-lg title">
 			<h1>New Products</h1>

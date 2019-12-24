@@ -23,16 +23,15 @@ class Categories extends CI_Controller
 	/************Show products from id categories************/
 	public function viewProdByCat($idCat)
 	{
-		$data['product'] = $this->CategoryModel->getProdByCat($idCat);
+		//TODO Bouton ajouter au panier
 
-//		$data['name'] = $data['product']['name'];
+		$data['category'] = $this->CategoryModel->getCategory();
+		$data['product'] = $this->CategoryModel->getProdByCat($idCat);
 
 		if (empty($data['product']))
 		{
 			show_404();
 		}
-
-		//print_r($data['product']);
 
 		$this->load->view('templates/header');
 		$this->load->view('pages/products', $data);
@@ -43,6 +42,9 @@ class Categories extends CI_Controller
 	/************Show products one by one************/
 	public function viewProduct($idProduct = NULL)
 	{
+		//TODO Bouton ajouter au panier
+
+		$data['category'] = $this->CategoryModel->getCategory();
 		$data['oneproduct'] = $this->CategoryModel->get_products($idProduct);
 
 		if (empty($data['oneproduct']))

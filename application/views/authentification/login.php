@@ -1,5 +1,9 @@
 <div id="container-sign">
 	<div id="square-signin">
+		<?php if($this->session->set_flashdata('item')){
+			echo $this->session->set_flashdata('item');
+		}?>
+
 		<?php echo validation_errors('<div class="alert alert-danger">', '</div>')?>
 		<form class="mb-4" method="post" action="<?= site_url('Connection/login'); ?>">
 			<div class="form-group">

@@ -5,6 +5,7 @@
 	<head>
 		<meta charset="unicode">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="<?= base_url();?>/assets/img/logoFeu.png">
 		<link rel="stylesheet"
 			  href="https://use.typekit.net/gar6jrk.css">
 		<link rel = "stylesheet" type = "text/css"
@@ -14,7 +15,7 @@
 		<link rel="stylesheet"
 			  href="<?php echo base_url(); ?>assets/FontAwesome/css/all.css">
 
-		<title>CodeIgniter Tutorial</title>
+		<title>Feu Official</title>
 
 	</head>
 	<body>
@@ -22,9 +23,9 @@
 			<div class="row nav">
 				<div class="col-md nav-pages">
 					<ul class="navbar-list">
-						<li><a class="nav-link" href="<?php echo base_url();?>categories">Categories</a></li>
-						<li><a class="nav-link" href="<?php echo base_url();?>about">About us</a></li>
-						<li><a class="nav-link" href="<?php echo base_url();?>contact">Contact us</a></li>
+						<li><a class="nav-link" href="<?= base_url();?>categories">Categories</a></li>
+						<li><a class="nav-link" href="<?= base_url();?>about">About us</a></li>
+						<li><a class="nav-link" href="<?= base_url();?>contact">Contact us</a></li>
 					</ul>
 				</div>
 				<div class="col-md">
@@ -37,7 +38,7 @@
 							<ul class="login-list justify-content-end">
 								<li><a href="<?= site_url('admin');?>" class="login-button nav-link">Admin page</a></li>
 								<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
-								<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
+								<li class="ml-2"><a href="<?= base_url();?>cart"><i class="fas fa-shopping-cart"></a></i></li>
 							</ul>
 						<?php }else{?>
 							<ul class="login-list justify-content-end">

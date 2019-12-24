@@ -57,6 +57,9 @@ class Connection extends CI_Controller
 		}
 		else
 		{
+			//TODO affichage lorsque les saisient ne sont pas bonne
+			/*$this->session->set_flashdata('item', '<div class="alert alert-danger">Invalid Username or Password</div>');
+			redirect('login');*/
 			echo '<script>alert("Error");history.go(-1);</script>';
 		}
 
@@ -98,7 +101,7 @@ class Connection extends CI_Controller
 
 					//TODO valider les deux mot de passe et si l'username n'est pas utilisé
 
-					$this->db->insert('user', $data);
+					$this->db->insert('customer', $data);
 					$this->session->set_flashdata('success', 'Your account has been registered. You can login now');
 					redirect("register", "refresh");
 				}

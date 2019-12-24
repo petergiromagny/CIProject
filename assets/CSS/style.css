@@ -418,6 +418,45 @@ form{
 	width: 100px;
 }
 
+#rowrap{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.cart-left{
+	width: 50%;
+	padding-top: 30px;
+	justify-content: center;
+	display: flex;
+}
+
+.cart-left img{
+	width: 100px;
+}
+
+.cart-left h1{
+	text-align-last: center;
+
+}
+
+.cart-right{
+	position: fixed;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	padding-top: 30px;
+	background-color: #d2d6d9;
+}
+
+.cart-right h1{
+	color: #2C3A40;
+	text-align-last: center;
+}
+
 /****************** FOOTER ******************/
 
 footer{
