@@ -16,11 +16,7 @@
 
 
 	<title>Feu Admin</title>
-	<style>
-		*{
-			color: #2C3A40;
-		}
-	</style>
+	<style>*{color: #2C3A40;}</style>
 	<div class="wrapper">
 		<!-- Sidebar -->
 		<nav id="sidebar">
@@ -36,6 +32,9 @@
 					<a href="<?= site_url('admin/Product'); ?>">Products</a>
 				</li>
 				<li>
+					<a href="#">Discount code</a>
+				</li>
+				<li>
 					<a href="#">Orders</a>
 				</li>
 				<li>
@@ -46,15 +45,6 @@
 				<li><a href="<?= base_url();?>home" class="btn btn-secondary mb-3">Back to website</a></li>
 				<li><a href="<?= site_url('Connection/logout'); ?>" class="btn btn-secondary">Logout</a></li>
 			</ul>
-		</nav>
-		<nav>
-			<?php //if ($this->session->userdata('logged_in') == TRUE){ ?>
-				<ul class="login-list">
-					<li><a href="<?= base_url();?>profile" class="login-button nav-link"><?= ucfirst($this->session->userdata('username')); ?></a></li>
-					<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
-					<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
-				</ul>
-			<?php //}?>
 		</nav>
 	</div>
 

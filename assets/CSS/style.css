@@ -19,12 +19,17 @@ body{
 /****************** HEAD ******************/
 
 
-#container-navbar{
+#container{
 	padding: 10px;
 	max-width: 1500px;
 	height: 75px;
 	margin: 0 auto 50px auto;
 	border-bottom: 4px solid #2C3A40;
+}
+
+.container-bottom{
+	border-bottom: 4px solid #2C3A40;
+	margin: 0 auto 50px auto;
 }
 
 .navbar-list{
@@ -43,6 +48,9 @@ body{
 	margin: 10px auto;
 }
 
+.nav-pages{
+	padding: 0 !important;
+}
 
 .nav-pages a{
 	font-family: kanit,sans-serif;
@@ -67,10 +75,6 @@ body{
 .nav-pages i:hover{
 	color: #2C3A40;
 	cursor: pointer;
-}
-
-.nav-link{
-	padding: 0 1rem;
 }
 
 .logo-header{
@@ -143,6 +147,7 @@ a.login-button:hover{
 	background: #2C3A40;
 	color: #D2D6D9;
 	transition: all 0.3s;
+	overflow: auto;
 }
 
 #sidebar.active {
@@ -187,6 +192,10 @@ a.login-button:hover{
 	background: #D2D6D9;
 	color: #74888C;
 }
+
+/* ---------------------------------------------------
+    Cart Sidebar
+----------------------------------------------------- */
 
 
 
@@ -387,7 +396,6 @@ form{
 .name-page{
 	color: #434d50;
 	text-align: center;
-	margin-bottom: 40px;
 }
 
 .block-category{
@@ -405,7 +413,7 @@ form{
 	color: #d2d6d9;
 }
 
-.td-middle td{
+.td-middle td, th{
 	vertical-align: middle !important;
 }
 
@@ -418,43 +426,23 @@ form{
 	width: 100px;
 }
 
-#rowrap{
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px;
+.cart-header{
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	text-align: center;
 }
 
-.cart-left{
-	width: 50%;
-	padding-top: 30px;
-	justify-content: center;
-	display: flex;
+.cart-header img{
+	width: 150px;
 }
 
-.cart-left img{
+.block-cart-img img{
 	width: 100px;
 }
 
-.cart-left h1{
-	text-align-last: center;
-
-}
-
-.cart-right{
-	position: fixed;
-	right: 0;
-	width: 50%;
-	height: 100%;
-	padding-top: 30px;
-	background-color: #d2d6d9;
-}
-
-.cart-right h1{
-	color: #2C3A40;
-	text-align-last: center;
+.thead-cart{
+	background-color: #6c757d;
+	border-style: hidden;
 }
 
 /****************** FOOTER ******************/

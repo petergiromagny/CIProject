@@ -1,5 +1,5 @@
 <div id="admin-container">
-	<h1 class="name-page">Category</h1>
+	<h1 class="name-page mb-4">Category</h1>
 	<table class="table table-hover">
 		<thead class="block-category">
 		<tr>
@@ -28,6 +28,9 @@
 		<?php endforeach;
 	}?>
 	</table>
+	<div>
+		<a href="#addCategory" class="btn btn-secondary" style="width: 100%"><i class="far fa-plus-square" style="color: #FFFFFF"></i> Add Category</a>
+	</div>
 </div>
 
 

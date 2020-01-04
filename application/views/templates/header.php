@@ -15,13 +15,14 @@
 		<link rel="stylesheet"
 			  href="<?php echo base_url(); ?>assets/FontAwesome/css/all.css">
 
+
 		<title>Feu Official</title>
 
 	</head>
 	<body>
-		<div id="container-navbar">
+		<div class="container container-bottom">
 			<div class="row nav">
-				<div class="col-md nav-pages">
+				<div class="col-md-5 nav-pages">
 					<ul class="navbar-list">
 						<li><a class="nav-link" href="<?= base_url();?>categories">Categories</a></li>
 						<li><a class="nav-link" href="<?= base_url();?>about">About us</a></li>
@@ -31,7 +32,7 @@
 				<div class="col-md">
 					<a class="nav-link logo-header" href="<?php echo base_url();?>">FEU</a>
 				</div>
-				<div class="col-md nav-pages">
+				<div class="col-md-5 nav-pages">
 					<?php if ($this->session->userdata('logged_in') == TRUE){ ?>
 
 						<?php if($this->session->userdata('level') == '2'){ ?>
@@ -44,7 +45,11 @@
 							<ul class="login-list justify-content-end">
 								<li><a href="<?= base_url();?>profile" class="login-button nav-link"><?= ucfirst($this->session->userdata('username')); ?></a></li>
 								<li><a href="<?= site_url('Connection/logout'); ?>" class="login-button nav-link">Logout</a></li>
-								<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>
+<!--								<li class="ml-2"><i class="fas fa-shopping-cart"></i></li>-->
+								<li class="ml-2"><button type="button" id="sidebarCollapse" class="btn"><i class="fas fa-shopping-cart"></i></button></li>
+
+
+
 							</ul>
 						<?php }
 					} else { ?>
@@ -56,7 +61,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="container-body">
+		<div class="container">
 
 
 

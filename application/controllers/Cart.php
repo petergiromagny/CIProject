@@ -13,4 +13,11 @@ class Cart extends CI_Controller
 		$this->load->view('templates/meta');
 		$this->load->view('pages/cart');
 	}
+
+	public function payment()
+	{
+		//TODO condition que le panier soit au moins d'un article
+		$this->load->view('templates/meta');
+		$this->load->view('pages/cart');
+	}
 }

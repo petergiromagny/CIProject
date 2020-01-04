@@ -6,7 +6,7 @@
 			<h1>New Season</h1>
 		</div>
 	</div>
-	<div id="container-body">
+	<div class="container">
 	<div class="row">
 		<div class="col-lg title">
 			<h1>New Products</h1>
