@@ -44,6 +44,6 @@
 			<input type="checkbox" class="custom-control-input" id="customSwitch2">
 			<label class="custom-control-label" for="customSwitch2">Subscribe to the BetaWeb Newsletter</label>
 		</div>
-		<button type="submit" name="register" class="btn btn-primary btn-signin mt-4">Sign in</button>
+		<button type="submit" name="register" class="btn btn-secondary mt-4">Sign in</button>
 	</form>
 </div>
