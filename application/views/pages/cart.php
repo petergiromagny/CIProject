@@ -45,7 +45,7 @@ if ($this->session->userdata('logged_in') == TRUE){ ?>
 		<div class="row justify-content-center">
 			<div class="cart-header">
 				<img src="<?= base_url();?>/assets/img/logoFeu.png" alt="Feu">
-				<h1>Your cart is empty</h1>
+				<h1>Your cart is empty <?= ucfirst($this->session->userdata('username')); ?></h1>
 				<a href="home" class="btn btn-secondary mt-4">Continue Shopping</a>
 			</div>
 		</div>

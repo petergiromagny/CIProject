@@ -60,9 +60,10 @@ class Connection extends CI_Controller
 			//TODO affichage lorsque les saisient ne sont pas bonne
 			/*$this->session->set_flashdata('item', '<div class="alert alert-danger">Invalid Username or Password</div>');
 			redirect('login');*/
-			echo '<script>alert("Error");history.go(-1);</script>';
+			echo '<script>alert("Your username or your password is not correct !");history.go(-1);</script>';
 		}
 
+		$this->load->view('templates/header');
 		$this->load->view('authentification/login');
 	}
 
