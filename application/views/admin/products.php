@@ -25,7 +25,7 @@
 					</td>
 					<td class="text-center">No date</td>
 					<td class="text-center"><a href="#" class="btn btn-secondary">EDIT</a></td>
-					<td class="text-center"><a href="#" class="btn btn-secondary">DELETE</a></td>
+					<td class="text-center"><a href="#"><button class="btn btn-secondary" onclick="deleteProduct()">DELETE</button></a></td>
 				</tr>
 				</tbody>
 			<?php endforeach;

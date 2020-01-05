@@ -18,7 +18,7 @@
 				<input type="checkbox" class="custom-control-input" id="customSwitch1">
 				<label class="custom-control-label" for="customSwitch1">Remember me</label>
 			</div>
-			<button type="submit" name="login" class="btn btn-primary btn-signin mt-4">Sign in</button>
+			<button type="submit" name="login" class="btn btn-secondary mt-4">Sign in</button>
 			<?= '<label class="text-danger">'.$this->session->flashdata('error').'</label>' ?>
 		</form>
 	</div>

@@ -291,14 +291,14 @@ form{
 }
 
 .btn-signin{
-	background-color: #2603A5 !important;
-	border-color: #2603A5 !important;
+	background-color: #2c3a40 !important;
+	border-color: #2c3a40 !important;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
-	color:#fff;
-	border-color:#2603A5 !important;
-	background-color:#2603A5 !important;
+	color: #fff;
+	border-color: #2c3a40 !important;
+	background-color: #2c3a40 !important;
 }
 
 .text-form{
